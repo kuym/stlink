@@ -177,6 +177,7 @@ int main(int argc, char** argv) {
 	state.reset = 1;    /* By default, reset board */
 	parse_options(argc, argv, &state);
 	switch (state.stlink_version) {
+	default:
 	case 2:
 		sl = stlink_open_usb(state.logging_level, 0);
 		if(sl == NULL) return 1;
@@ -1041,9 +1042,12 @@ int serve(stlink_t *sl, st_state_t *st) {
 				reply = strdup("E00");
 			}
 
-			reply = calloc(8 + 1, 1);
-			sprintf(reply, "%08x", myreg);
-
+			if(reply == NULL)
+			{
+				reply = calloc(8 + 1, 1);
+				sprintf(reply, "%08x", myreg);
+			}
+			
 			break;
 		}
 
@@ -1199,6 +1203,7 @@ int serve(stlink_t *sl, st_state_t *st) {
                         break;
                     }
 				}
+				break;	// error: was missing
 
 				default:
 				reply = strdup("");
@@ -1225,6 +1230,7 @@ int serve(stlink_t *sl, st_state_t *st) {
 					reply = strdup("OK");
 					break;
 				}
+				break;	// error: was missing
 
 				default:
 				reply = strdup("");
