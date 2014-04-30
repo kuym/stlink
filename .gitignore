@@ -30,3 +30,4 @@ test_sg
 Makefile
 *.exe
 example/blink/*.elf
+DerivedData

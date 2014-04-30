@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E887306F19057B33008F5650 /* gdb-remote.c in Sources */ = {isa = PBXBuildFile; fileRef = E887306B19057B33008F5650 /* gdb-remote.c */; };
+		E887307019057B33008F5650 /* gdb-server.c in Sources */ = {isa = PBXBuildFile; fileRef = E887306D19057B33008F5650 /* gdb-server.c */; };
+		E887307919057CE1008F5650 /* st-info.c in Sources */ = {isa = PBXBuildFile; fileRef = E887304F1905788C008F5650 /* st-info.c */; };
+		E887307A19057CE1008F5650 /* st-term.c in Sources */ = {isa = PBXBuildFile; fileRef = E88730501905788C008F5650 /* st-term.c */; };
+		E887307B19057CE1008F5650 /* stlink-common.c in Sources */ = {isa = PBXBuildFile; fileRef = E88730511905788C008F5650 /* stlink-common.c */; };
+		E887307C19057CE1008F5650 /* stlink-sg.c in Sources */ = {isa = PBXBuildFile; fileRef = E88730531905788C008F5650 /* stlink-sg.c */; };
+		E887307D19057CE1008F5650 /* stlink-usb.c in Sources */ = {isa = PBXBuildFile; fileRef = E88730551905788C008F5650 /* stlink-usb.c */; };
+		E887307E19057CE1008F5650 /* uglylogging.c in Sources */ = {isa = PBXBuildFile; fileRef = E88730591905788C008F5650 /* uglylogging.c */; };
+		E887308819057D15008F5650 /* st_flash.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E887308719057D15008F5650 /* st_flash.1 */; };
+		E887308C19057D1F008F5650 /* libstlink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E887307519057CD1008F5650 /* libstlink.a */; };
+		E887308D19057D39008F5650 /* libusb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E887306819057AC3008F5650 /* libusb-1.0.a */; };
+		E887308E1905830E008F5650 /* libstlink.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E887307519057CD1008F5650 /* libstlink.a */; };
+		E887309319058504008F5650 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = E887306A19057B33008F5650 /* main.c */; };
+		E887309619058565008F5650 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88730911905848A008F5650 /* IOKit.framework */; };
+		E88730971905856E008F5650 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E887308F1905847E008F5650 /* CoreFoundation.framework */; };
+		E88730981905857D008F5650 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E887308F1905847E008F5650 /* CoreFoundation.framework */; };
+		E887309919058582008F5650 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88730911905848A008F5650 /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E887309A19058DDF008F5650 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E887303919057846008F5650 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E887307419057CD1008F5650;
+			remoteInfo = stlink;
+		};
+		E887309C19058DE2008F5650 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E887303919057846008F5650 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E887307419057CD1008F5650;
+			remoteInfo = stlink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E887303F19057846008F5650 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		E887308119057D15008F5650 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				E887308819057D15008F5650 /* st_flash.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E887304119057846008F5650 /* st-util */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "st-util"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E887304D1905788C008F5650 /* mmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mmap.c; path = src/mmap.c; sourceTree = "<group>"; };
+		E887304E1905788C008F5650 /* mmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mmap.h; path = src/mmap.h; sourceTree = "<group>"; };
+		E887304F1905788C008F5650 /* st-info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "st-info.c"; path = "src/st-info.c"; sourceTree = "<group>"; };
+		E88730501905788C008F5650 /* st-term.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "st-term.c"; path = "src/st-term.c"; sourceTree = "<group>"; };
+		E88730511905788C008F5650 /* stlink-common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "stlink-common.c"; path = "src/stlink-common.c"; sourceTree = "<group>"; };
+		E88730521905788C008F5650 /* stlink-common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "stlink-common.h"; path = "src/stlink-common.h"; sourceTree = "<group>"; };
+		E88730531905788C008F5650 /* stlink-sg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "stlink-sg.c"; path = "src/stlink-sg.c"; sourceTree = "<group>"; };
+		E88730541905788C008F5650 /* stlink-sg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "stlink-sg.h"; path = "src/stlink-sg.h"; sourceTree = "<group>"; };
+		E88730551905788C008F5650 /* stlink-usb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "stlink-usb.c"; path = "src/stlink-usb.c"; sourceTree = "<group>"; };
+		E88730561905788C008F5650 /* stlink-usb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "stlink-usb.h"; path = "src/stlink-usb.h"; sourceTree = "<group>"; };
+		E88730591905788C008F5650 /* uglylogging.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = uglylogging.c; path = src/uglylogging.c; sourceTree = "<group>"; };
+		E887305A1905788C008F5650 /* uglylogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = uglylogging.h; path = src/uglylogging.h; sourceTree = "<group>"; };
+		E887306419057A48008F5650 /* libusb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libusb.a; sourceTree = "<group>"; };
+		E887306619057AA7008F5650 /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.dylib"; sourceTree = "<group>"; };
+		E887306819057AC3008F5650 /* libusb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libusb-1.0.a"; sourceTree = "<group>"; };
+		E887306A19057B33008F5650 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = flash/main.c; sourceTree = "<group>"; };
+		E887306B19057B33008F5650 /* gdb-remote.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "gdb-remote.c"; path = "gdbserver/gdb-remote.c"; sourceTree = "<group>"; };
+		E887306C19057B33008F5650 /* gdb-remote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "gdb-remote.h"; path = "gdbserver/gdb-remote.h"; sourceTree = "<group>"; };
+		E887306D19057B33008F5650 /* gdb-server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "gdb-server.c"; path = "gdbserver/gdb-server.c"; sourceTree = "<group>"; };
+		E887307519057CD1008F5650 /* libstlink.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libstlink.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E887308319057D15008F5650 /* st-flash */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "st-flash"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E887308519057D15008F5650 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E887308719057D15008F5650 /* st_flash.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = st_flash.1; sourceTree = "<group>"; };
+		E887308F1905847E008F5650 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E88730911905848A008F5650 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E887303E19057846008F5650 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E887309919058582008F5650 /* IOKit.framework in Frameworks */,
+				E88730981905857D008F5650 /* CoreFoundation.framework in Frameworks */,
+				E887308E1905830E008F5650 /* libstlink.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E887307219057CD1008F5650 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E887308D19057D39008F5650 /* libusb-1.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E887308019057D15008F5650 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E88730971905856E008F5650 /* CoreFoundation.framework in Frameworks */,
+				E887309619058565008F5650 /* IOKit.framework in Frameworks */,
+				E887308C19057D1F008F5650 /* libstlink.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E887303819057846008F5650 = {
+			isa = PBXGroup;
+			children = (
+				E88730911905848A008F5650 /* IOKit.framework */,
+				E887308F1905847E008F5650 /* CoreFoundation.framework */,
+				E887306A19057B33008F5650 /* main.c */,
+				E887306B19057B33008F5650 /* gdb-remote.c */,
+				E887306C19057B33008F5650 /* gdb-remote.h */,
+				E887306D19057B33008F5650 /* gdb-server.c */,
+				E887306819057AC3008F5650 /* libusb-1.0.a */,
+				E887306619057AA7008F5650 /* libusb-1.0.0.dylib */,
+				E887306419057A48008F5650 /* libusb.a */,
+				E887304D1905788C008F5650 /* mmap.c */,
+				E887304E1905788C008F5650 /* mmap.h */,
+				E887304F1905788C008F5650 /* st-info.c */,
+				E88730501905788C008F5650 /* st-term.c */,
+				E88730511905788C008F5650 /* stlink-common.c */,
+				E88730521905788C008F5650 /* stlink-common.h */,
+				E88730531905788C008F5650 /* stlink-sg.c */,
+				E88730541905788C008F5650 /* stlink-sg.h */,
+				E88730551905788C008F5650 /* stlink-usb.c */,
+				E88730561905788C008F5650 /* stlink-usb.h */,
+				E88730591905788C008F5650 /* uglylogging.c */,
+				E887305A1905788C008F5650 /* uglylogging.h */,
+				E887308419057D15008F5650 /* st-flash */,
+				E887304219057846008F5650 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E887304219057846008F5650 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E887304119057846008F5650 /* st-util */,
+				E887307519057CD1008F5650 /* libstlink.a */,
+				E887308319057D15008F5650 /* st-flash */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E887308419057D15008F5650 /* st-flash */ = {
+			isa = PBXGroup;
+			children = (
+				E887308519057D15008F5650 /* main.cpp */,
+				E887308719057D15008F5650 /* st_flash.1 */,
+			);
+			path = "st-flash";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E887307319057CD1008F5650 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E887304019057846008F5650 /* st-util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E887304A19057846008F5650 /* Build configuration list for PBXNativeTarget "st-util" */;
+			buildPhases = (
+				E887303D19057846008F5650 /* Sources */,
+				E887303E19057846008F5650 /* Frameworks */,
+				E887303F19057846008F5650 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E887309D19058DE2008F5650 /* PBXTargetDependency */,
+			);
+			name = "st-util";
+			productName = stlink;
+			productReference = E887304119057846008F5650 /* st-util */;
+			productType = "com.apple.product-type.tool";
+		};
+		E887307419057CD1008F5650 /* stlink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E887307619057CD1008F5650 /* Build configuration list for PBXNativeTarget "stlink" */;
+			buildPhases = (
+				E887307119057CD1008F5650 /* Sources */,
+				E887307219057CD1008F5650 /* Frameworks */,
+				E887307319057CD1008F5650 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = stlink;
+			productName = libstlink;
+			productReference = E887307519057CD1008F5650 /* libstlink.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E887308219057D15008F5650 /* st-flash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E887308919057D15008F5650 /* Build configuration list for PBXNativeTarget "st-flash" */;
+			buildPhases = (
+				E887307F19057D15008F5650 /* Sources */,
+				E887308019057D15008F5650 /* Frameworks */,
+				E887308119057D15008F5650 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E887309B19058DDF008F5650 /* PBXTargetDependency */,
+			);
+			name = "st-flash";
+			productName = "st-flash";
+			productReference = E887308319057D15008F5650 /* st-flash */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E887303919057846008F5650 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = AHI;
+			};
+			buildConfigurationList = E887303C19057846008F5650 /* Build configuration list for PBXProject "stlink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E887303819057846008F5650;
+			productRefGroup = E887304219057846008F5650 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E887304019057846008F5650 /* st-util */,
+				E887307419057CD1008F5650 /* stlink */,
+				E887308219057D15008F5650 /* st-flash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E887303D19057846008F5650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E887307019057B33008F5650 /* gdb-server.c in Sources */,
+				E887306F19057B33008F5650 /* gdb-remote.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E887307119057CD1008F5650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E887307919057CE1008F5650 /* st-info.c in Sources */,
+				E887307A19057CE1008F5650 /* st-term.c in Sources */,
+				E887307B19057CE1008F5650 /* stlink-common.c in Sources */,
+				E887307C19057CE1008F5650 /* stlink-sg.c in Sources */,
+				E887307D19057CE1008F5650 /* stlink-usb.c in Sources */,
+				E887307E19057CE1008F5650 /* uglylogging.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E887307F19057D15008F5650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E887309319058504008F5650 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E887309B19058DDF008F5650 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E887307419057CD1008F5650 /* stlink */;
+			targetProxy = E887309A19058DDF008F5650 /* PBXContainerItemProxy */;
+		};
+		E887309D19058DE2008F5650 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E887307419057CD1008F5650 /* stlink */;
+			targetProxy = E887309C19058DE2008F5650 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E887304819057846008F5650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E887304919057846008F5650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E887304B19057846008F5650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					src,
+					"$(PROJECT_DIR)/third-party/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third-party/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E887304C19057846008F5650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					src,
+					"$(PROJECT_DIR)/third-party/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third-party/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E887307719057CD1008F5650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/third-party/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third-party/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E887307819057CD1008F5650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/third-party/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/third-party/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E887308A19057D15008F5650 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/third-party/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E887308B19057D15008F5650 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/third-party/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E887303C19057846008F5650 /* Build configuration list for PBXProject "stlink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E887304819057846008F5650 /* Debug */,
+				E887304919057846008F5650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E887304A19057846008F5650 /* Build configuration list for PBXNativeTarget "st-util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E887304B19057846008F5650 /* Debug */,
+				E887304C19057846008F5650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E887307619057CD1008F5650 /* Build configuration list for PBXNativeTarget "stlink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E887307719057CD1008F5650 /* Debug */,
+				E887307819057CD1008F5650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E887308919057D15008F5650 /* Build configuration list for PBXNativeTarget "st-flash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E887308A19057D15008F5650 /* Debug */,
+				E887308B19057D15008F5650 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E887303919057846008F5650 /* Project object */;
+}
